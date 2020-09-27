@@ -1,0 +1,352 @@
+*,
+*::before, 
+*::after {
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+    
+}
+
+html {
+    font-family:;
+    font-size:10px;
+
+}
+
+body {
+width:100%;
+height:100vh;
+background-color:lightgray;
+/*display:flex;*/
+background-color:rgb(250, 248, 248);
+
+}
+/*Header*/ /*Source: https://www.youtube.com/watch?v=-drcStMYOcM*/
+
+header nav {
+list-style:none;
+
+}
+header a {
+    color:rgb(44, 43, 43);
+    text-decoration:none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+header {
+    margin:10px;
+    padding:35px 150px;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:10;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    /*background-color:rgb(145, 141, 141);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    */
+}
+
+header h1 {
+    text-transform:uppercase;
+    letter-spacing:2px;
+    border-left: 2px solid rgb(44, 43, 43);
+    padding:5px;
+}
+
+header nav {
+    display:flex;
+}
+
+header nav li{
+    margin 0px 15px;
+    padding:35px;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+   
+
+}
+
+header nav li:first-child{
+    margin-left:0px;
+}
+
+header nav li:last-child{
+    margin-right:0px;
+}
+
+
+
+/*First section, index*/
+
+.about {
+    position:relative;
+    max-width:100%;
+    margin:100px;
+
+}
+.about img {
+    max-width:75%;
+   
+}
+.about .aboutinfo  {
+    display:inline-block;
+    position: absolute;
+    background-color: white;
+    margin-left:800px;
+    margin-top:10%;
+    padding:50px;
+}
+
+.contactme {
+    position:relative;
+    max-width:100%;
+    margin:100px;
+}
+.contactme img {
+    max-width:75%;
+    float:right;
+}
+.contactme .contactmeinfo  {
+    display:inline-block;
+    position: absolute;
+    background-color: white;
+    margin-left:200px;
+    padding:50px;
+    margin-top:15%;
+}
+/*Slideshow*//*https://www.youtube.com/watch?v=FWQir0ZfAJI*/
+.slideshow {
+    display:block;
+    margin:250px;
+    width:100%;
+    height:100vh;
+    position:relative;
+}
+.slideshow-items {
+    width:inherit;
+    height:inherit;
+    position:absolute;
+    opacity:0;
+    animation:cycleimages 31s infinite;
+}
+
+.slideshow-items:nth-child(1){
+    animation-delay:0s;
+}
+.slideshow-items:nth-child(2){
+    animation-delay:10s;
+}
+.slideshow-items:nth-child(3){
+    animation-delay:20s;
+}
+
+.slideshow-item img {
+    /*display:block;*/
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.slideshow-item-text {
+    max-width:50%;
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    background-color:rgba(0,0,0, .8);
+    padding:10rem 5rem;
+    color: white;
+}
+
+.slideshow-item-text h5 {
+    font-size:5rem;
+    font-family:;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    margin-bottom:2.5rem;
+}
+.slideshow-item-text p {
+    font-size:1.5rem;
+    font-family:;
+    letter-spacing:1px;
+    margin-bottom:2.5rem;
+    font-weight:;
+}
+
+@keyframes cycleimages {
+    25% {
+        opacity:1;
+    }
+    40% {
+        opacity:0;
+
+    }
+}
+
+
+/*Art-gallery*/ /*Source:https://www.youtube.com/watch?v=zgXHgKad7N0*/
+.container {
+    width:100%;
+    max-width:120rem;
+    margin-top:300px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:0 1.5rem;
+    
+}
+.artwork {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:auto ;
+    grid-gap:1.5rem;
+    grid-template-areas: 
+    'art1 art2 art3 art3'
+    'art1 art4 art5 art6'
+    'art7 art7 art8 art6';
+}
+.artwork a {
+    width:100%;
+    height:25rem;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+}
+.artwork a i {
+    color:white;
+    font-size:3rem;
+    position:relative;
+    z-index:100;
+    padding:1rem 3rem;
+    border: 2px solid white;
+    border-radius: .9rem;
+
+    opacity:0;
+    transition:opacity .5s;
+}
+
+.artwork a::before {
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.artwork a:hover i,
+.artwork a:hover::before {
+    opacity:1;
+
+}
+.art1 {
+    grid-area:art1;
+    min-height:51.5rem;
+    background-image: url("bilder/eyes.jpg");
+}
+.art2 {
+    grid-area:art2;
+    background-image: url("bilder/footsteps.jpg");
+}
+.art3 {
+    grid-area:art3;
+    background-image: url("bilder/girl.jpg");
+}
+.art4 {
+    grid-area:art4;
+    background-image: url("bilder/leaf.jpg");
+}
+.art5 {
+    grid-area:art5;
+    background-image: url("bilder/moln.jpg");
+}
+.art6 {
+    grid-area:art6;
+    min-height: 51.5rem;
+    background-image: url("bilder/angel.jpg");
+}
+.art7 {
+    grid-area:art7;
+    background-image: url("bilder/eyes.jpg");
+}
+.art8 {
+    grid-area:art8;
+    background-image: url("bilder/leaf.jpg");
+}
+
+
+
+/*About*/
+
+form {
+    margin-top:200px;
+    margin-left:10%;
+    color: rgb(44, 43, 43);
+    background-color:blue;
+    padding:20px;
+
+}
+
+@media (max-width:900px) {
+    header{
+        flex-direction:column;
+    }
+    header h1 {
+        margin-bottom:15px;
+    }
+    header nav li {
+        margin: 0 7px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .artwork {
+    grid-template-areas:
+    'art1 art2 art 3 art4' 
+    'art1 art2 art 3 art4'
+    'art1 art2 art 3 art6'
+    'art6 art6 art7 art6'
+    'art8 art8 art8 art6';
+    }
+    .artwork a {
+        height:20rem;
+    }
+    .art1 {
+        min-height:41.5rem;
+    }
+    .art6 {
+        min-height: 20rem;
+    }
+
+@media screen and (max-width:600px) {
+    .artwork {
+    grid-template-areas:
+    'art1 art1 art1 art1' 
+    'art2 art2 art2 art2'
+    'art3 art3 art3 art3'
+    'art4 art4 art4 art4'
+    'art5 art5 art5 art5'
+    'art6 art6 art6 art6'
+    'art7 art7 art7 art7'
+    'art8 art8 art8 art8';
+    }
+    
+    .artwork a,
+    .art1,
+    .art6 {
+        min-height:30rem;
+        height:30rem;
+    }
+    
+

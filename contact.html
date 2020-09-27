@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Michelle Art</a></h1>
+        <nav>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="artwork.html">Art-gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </nav>
+    </header>
+
+    <form>
+        
+            <label for="name">Your name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            
+        <br>
+        <br>
+            
+            <label for="email">Enter e-mail:</label>
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
+              
+        <br>
+        <br>
+            
+            <label for="country">I´m from:</label><br>
+            <select id="country" name="country">
+                  <option value="Australia">Australia</option>
+                  <option value="Sweden">Sweden</option>
+                  <option value="Other">Other</option>
+            </select>
+        <br>
+        <br>
+            <div class="checkbox">
+            
+            <p>I have questions about...</p>
+            
+            
+            <label for="thoughts">Artwork:</label>
+            <input type="checkbox" id="thoughts" name="thoughts" value="artwork"><br>
+            
+            
+            <label for="thoughts1">Prices</label>
+            <input type="checkbox" id="thoughts1" name="thoughts1" value="Prices"><br>
+            
+           
+            <label for="thoughts2">Purchase</label>
+            <input type="checkbox" id="thoughts2" name="thoughts2" value="Purchase">
+            <br>
+        <br>
+        <br>
+            <label for="questions">Questions: </label><br>
+
+            <textarea name="questions" id="questions" cols="30" rows="10" 
+            placeholder="Im wondering..." required> 
+            </textarea>
+        <br>
+            <input type="submit" value="Send">
+    </form>
+</body>
+</html>
