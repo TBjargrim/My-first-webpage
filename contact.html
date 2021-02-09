@@ -1,71 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="index.js"></script>
 
-    <title>Contact</title>
-</head>
-<body>
+    <title>Contact 2</title>
+  </head>
+  <body>
     <header>
-        <h1><a href="index.html">Michelle Art</a></h1>
-        <nav>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="artwork.html">Art-gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-
-        </nav>
+      <a href="index.html"><img src="bilder/ShellyLogo.png" alt="" /></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="artwork.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
+    <form name="myForm" method="post">
+      <ul class="formlist">
+        <li>
+          <label for="name">Your name:</label>
+          <input type="text" id="name" name="name" placeholder="Name" />
+        </li>
+        <br />
+        <li>
+          <label for="email">Enter e-mail:</label>
+          <input type="email" id="email" name="email" placeholder="E-mail" />
+        </li>
+        <br />
+        <li>
+          <label for="country">I´m from:</label><br /><br />
+          <select id="country" name="country">
+            <option value="no answer">---</option>
+            <option value="Australia">Australia</option>
+            <option value="Sweden">Sweden</option>
+            <option value="Other">Other</option>
+          </select>
+        </li>
+        <br />
+        <br />
+        <li>
+          <ul class="checkbox">
+            <li>
+              <p>I have questions about...</p>
+            </li>
+            <br />
+            <li>
+              <label for="thoughts">Artwork:</label>
+              <input
+                type="checkbox"
+                id="thoughts"
+                name="thoughts"
+                value="artwork"
+              />
+            </li>
+            <br />
+            <li>
+              <label for="thoughts1">Prices</label>
+              <input
+                type="checkbox"
+                id="thoughts2"
+                name="thoughts2"
+                value="Prices"
+              />
+            </li>
+            <br />
+            <li>
+              <label for="thoughts2">Purchase</label>
+              <input
+                type="checkbox"
+                id="thoughts3"
+                name="thoughts3"
+                value="Purchase"
+              />
+            </li>
+          </ul>
+        </li>
+        <br />
+        <br />
+        <br />
 
-    <form>
-        
-            <label for="name">Your name:</label>
-            <input type="text" id="name" name="name" placeholder="Name" required>
-            
-        <br>
-        <br>
-            
-            <label for="email">Enter e-mail:</label>
-            <input type="email" id="email" name="email" placeholder="E-mail" required>
-              
-        <br>
-        <br>
-            
-            <label for="country">I´m from:</label><br>
-            <select id="country" name="country">
-                  <option value="Australia">Australia</option>
-                  <option value="Sweden">Sweden</option>
-                  <option value="Other">Other</option>
-            </select>
-        <br>
-        <br>
-            <div class="checkbox">
-            
-            <p>I have questions about...</p>
-            
-            
-            <label for="thoughts">Artwork:</label>
-            <input type="checkbox" id="thoughts" name="thoughts" value="artwork"><br>
-            
-            
-            <label for="thoughts1">Prices</label>
-            <input type="checkbox" id="thoughts1" name="thoughts1" value="Prices"><br>
-            
-           
-            <label for="thoughts2">Purchase</label>
-            <input type="checkbox" id="thoughts2" name="thoughts2" value="Purchase">
-            <br>
-        <br>
-        <br>
-            <label for="questions">Questions: </label><br>
-
-            <textarea name="questions" id="questions" cols="30" rows="10" 
-            placeholder="Im wondering..." required> 
-            </textarea>
-        <br>
-            <input type="submit" value="Send">
+        <li>
+          <p>Questions:</p>
+          <textarea
+            name="questions"
+            id="questions"
+            cols="50"
+            rows="10"
+            required
+          >
+          </textarea>
+        </li>
+        <br />
+        <br />
+        <ul class="buttons">
+          <li>
+            <input type="reset" name="reset" id="reset" value="Reset" />
+          </li>
+          <li>
+            <input type="submit" name="submit" id="submit" value="Send" />
+          </li>
+        </ul>
+      </ul>
     </form>
-</body>
+    <footer>
+      <div class="footerinfo">
+        <div class="social">
+          <h3>Wanna see me on other platforms?</h3>
+          <br />
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footercontact">
+        <h3>Adress:</h3>
+        <div class="city">
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="text">Brisbane, Australia</span>
+        </div>
+        <div class="phone">
+          <span class="fas fa-phone-alt"></span>
+          <span class="text">+61 7465 5423</span>
+        </div>
+        <div class="email">
+          <span class="fas fa-envelope"></span>
+          <span class="text">shelly@gmail.com</span>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

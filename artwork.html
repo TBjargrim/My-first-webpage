@@ -1,58 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
     <title>Art</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <h1><a href="index.html">Michelle Art</a></h1>
-        <nav>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="artwork.html">Art-gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-
-        </nav>
-
-
+      <a href="index.html"><img src="bilder/ShellyLogo.png" alt="" /></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="artwork.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
+
+    <section class="slideshow">
+      <div class="slideshow-items">
+        <img src="bilder/footsteps.jpg" alt="Photo of footsteps in sand" />
+        <div class="slideshow-item-text">
+          <h5>Try to walk in my footsteps</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            quisquam omnis, nulla esse illo necessitatibus? Ipsam deleniti
+            voluptates, rem doloremque porro veritatis error voluptatibus
+            ducimus tempore quae in maxime voluptate!
+          </p>
+        </div>
+      </div>
+
+      <div class="slideshow-items">
+        <img src="bilder/angel.jpg" alt="Photo of a girl" />
+        <div class="slideshow-item-text">
+          <h5>About a girl</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            quisquam omnis, nulla esse illo necessitatibus? Ipsam deleniti
+            voluptates, rem doloremque porro veritatis error voluptatibus
+            ducimus tempore quae in maxime voluptate!
+          </p>
+        </div>
+      </div>
+
+      <div class="slideshow-items">
+        <img src="bilder/leaf.jpg" alt="Photo of a leaf" />
+        <div class="slideshow-item-text">
+          <h5>THe wind is blowing me in the right direction</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            quisquam omnis, nulla esse illo necessitatibus? Ipsam deleniti
+            voluptates, rem doloremque porro veritatis error voluptatibus
+            ducimus tempore quae in maxime voluptate!
+          </p>
+        </div>
+      </div>
+    </section>
+
     <main class="container">
-        <div class="artwork">
+      <div class="artwork">
         <a href="bilder/eyes.jpg" class="art1">
-            <i class="icon ion-md-expand"></i>
+          <i class="icon ion-md-expand"></i>
         </a>
         <a href="bilder/footsteps.jpg" class="art2">
-            <i class="icon ion-md-expand"></i>
+          <i class="icon ion-md-expand"></i>
         </a>
         <a href="bilder/girl.jpg" class="art3">
-            <i class="icon ion-md-expand"></i>
+          <i class="icon ion-md-expand"></i>
         </a>
         <a href="bilder/leaf.jpg" class="art4">
-            <i class="heart-circle-outline"></i>
+          <i class="heart-circle-outline"></i>
         </a>
         <a href="bilder/moln.jpg" class="art5">
-            <i class="icon ion-md-expand"></i>
+          <i class="icon ion-md-expand"></i>
         </a>
         <a href="bilder/angel.jpg" class="art6">
-            <i class="icon ion-md-expand"></i>
+          <i class="icon ion-md-expand"></i>
         </a>
         <a href="bilder/eyes.jpg" class="art7">
-            <i class="icon ion-md-expand"></i>
+          <i class="icon ion-md-expand"></i>
         </a>
         <a href="bilder/leaf.jpg" class="art8">
-            <i class="icon ion-md-expand"></i>
-        </a> 
-
-
-        </div>
-
+          <i class="icon ion-md-expand"></i>
+        </a>
+      </div>
     </main>
+    <footer>
+      <div class="footerinfo">
+        <div class="social">
+          <h3>Wanna see me on other platforms?</h3>
+          <br />
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
 
-
-</body>
+      <div class="footercontact">
+        <h3>Adress:</h3>
+        <div class="city">
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="text">Brisbane, Australia</span>
+        </div>
+        <div class="phone">
+          <span class="fas fa-phone-alt"></span>
+          <span class="text">+61 7465 5423</span>
+        </div>
+        <div class="email">
+          <span class="fas fa-envelope"></span>
+          <span class="text">shelly@gmail.com</span>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
