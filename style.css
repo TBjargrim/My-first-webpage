@@ -14,7 +14,6 @@ body {
 width:100%;
 height:100vh;
 background-color:lightgray;
-/*display:flex;*/
 background-color:rgb(250, 248, 248);
 }
 
@@ -160,19 +159,27 @@ p {font-size:1.1rem;}
 /*About*/
 
 main {
-    margin:200px;
+    position: relative;
+    top:30%;
+    left:5%;
     display:flex;
     flex-direction: column;
     padding:50px;
-    max-width:100%;
+    max-width:90%;
+    min-height:50%;
     color: black;
     align-content: center;
     background:url(bilder/moln.jpg);
+    background-image:no-repeat;
+    background-image:cover;
+
 }
 
 main > h4, main > .aboutmetext {
-
-max-width:100%;
+position:relative;
+top:10%;
+left:5%;
+max-width:80%;
 }
 
 
@@ -181,12 +188,12 @@ max-width:100%;
 /*Art-gallery*/
 /*Slideshow*//*https://www.youtube.com/watch?v=FWQir0ZfAJI*/
 .slideshow {
-    display:block;
-    margin-top:250px;
-    margin-left:150px;
-    width:100%;
-    height:100vh;
     position:relative;
+    left:25%;
+    top:25%;
+    width:100%;
+    height:auto;
+    
 }
 .slideshow-items {
     width:inherit;
@@ -252,13 +259,11 @@ max-width:100%;
 
 /*Art-gallery*/ /*Source:https://www.youtube.com/watch?v=zgXHgKad7N0*/
 .container {
+    position:relative;
     width:100%;
     max-width:120rem;
-    margin-top:200px;
-    margin-left:auto;
-    margin-right:auto;
-    padding:0 1.5rem;
-    
+    top:110%;
+    left:20%;
 }
 .artwork {
     display:grid;
@@ -290,7 +295,6 @@ max-width:100%;
     padding:1rem 3rem;
     border: 2px solid white;
     border-radius: .9rem;
-
     opacity:0;
     transition:opacity .5s;
 }
@@ -411,10 +415,10 @@ input[type="reset"]:hover{
 
 footer {
     color:rgb(44, 43, 43);
-   
+    position:absolute;
     display:flex;
     margin:20px;
-    bottom:0px;
+    bottom:0;
     width:100%;
     justify-content: center;
     border-top: 1px solid rgb(44, 43, 43);
@@ -423,9 +427,7 @@ footer {
      padding:10px 20px;
     letter-spacing: .8px;
  }
- .social a {
-        
- }
+
  .footercontact {
      padding:10px 20px;
     letter-spacing: 1px;
@@ -478,7 +480,7 @@ footer {
     .art6 {
         min-height: 20rem;
     }
-
+}
 @media screen and (max-width:600px) {
     .artwork {
     grid-template-areas:
@@ -500,3 +502,4 @@ footer {
     }
     
 
+}
